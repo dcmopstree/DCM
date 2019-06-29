@@ -3,6 +3,7 @@ echo "hi devops team. pleas eenter the programme to install. \n"
 
 if grep -q "$input" list.txt; then
       echo " $input package installed" 
+      apt list installed $input
 else 
       echo "$input package not installed. \n"
 	echo "Installing the package for you."
